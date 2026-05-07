@@ -13,12 +13,52 @@
     <div class="nav-toggle">
         <button class="menu-toggle" onclick="toggleMenu()">☰</button>
     </div>
-    <div class="nav-menu">
-        <a href="#home">🏠 Home</a>
+    <div class="nav-menu" id="navMenu">
+        <a href="index.html">🏠 Home</a>
         <a href="#aboutus">👤 About Us</a>
         <button onclick="toggleTheme()">🌙</button>
     </div>
 </nav>
+
+<!-- Feature Menu Bar -->
+<!-- Professor Card -->
+<div class="floating-professor-card" onclick="toggleProfessorCard()">
+
+    <div class="professor-content">
+
+        <div class="professor-image">
+            <img 
+                id="drAbhishekImg"
+                src="Abhishek (Logo) - 1.png"
+                alt="Dr. Abhishek"
+                class="profile-img-professor"
+            >
+        </div>
+
+        <div class="professor-info">
+            <h2>Dr. Abhishek</h2>
+            <p class="professor-title">📚 Associate Professor</p>
+            <p class="professor-desc">Guide & Mentor</p>
+        </div>
+
+        <div class="professor-details">
+            <p class="professor-bio">
+                Dr. Abhishek is a dedicated Associate Professor with expertise
+                in web development and software engineering. He has been
+                instrumental in guiding this fitness tracker project,
+                providing valuable insights and mentorship to ensure
+                innovative solutions and high-quality work.
+                linkedIn: <a href="https://www.linkedin.com/in/dr-abhishek-thakur-00123321?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">Dr. Abhishek's LinkedIn</a>
+            </p>
+
+            <div class="professor-contact">
+                <p>🎓 Department of Computer Science</p>
+            
+            </div>
+        </div>
+
+    </div>
+</div>
 
 <!-- Feature Menu Bar -->
 <div class="feature-menu">
@@ -28,7 +68,7 @@
     <a href="#aboutus">👤 About Us</a>
 </div>
 
-<div class="container" id="home">
+<div class="container">
 
     <!-- Fitness Mode Selection -->
     <h3>💪 Fitness Mode</h3>
@@ -39,6 +79,118 @@
     </div>
 
     <!-- Weight Management -->
+    <!-- About Us Section -->
+    <h3 id="aboutus">👤 About Us</h3>
+
+    <div class="students">
+
+        <!-- Anamika -->
+        <div class="student">
+
+            <div class="student-image-container">
+                <img
+                    id="anamikaImg"
+                    src="anamika image.jpeg"
+                    alt="Anamika"
+                    class="profile-img"
+                >
+            </div>
+
+            <h1>✨ Anamika ✨</h1>
+
+            <div class="student-description">
+                <p id="anamikaDesc">
+                    Anamika is an enthusiastic team member who brings creativity
+                    and strong problem-solving skills to enhance both the design
+                    and functionality of this project. She consistently contributes
+                    innovative ideas, pays attention to detail, and ensures that
+                    the user experience remains engaging and effective.
+                    linkedIn: <a href="https://www.linkedin.com/in/anamika-singh-a2889935a?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">Anamika's LinkedIn</a>
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Divider -->
+        <div class="divider"></div>
+
+        <!-- Aastha -->
+        <div class="student">
+
+            <div class="student-image-container">
+                <img
+                    id="aasthaImg"
+                    src="aastha image .jpeg"
+                    alt="Aastha"
+                    class="profile-img"
+                >
+            </div>
+
+            <h1>✨ Aastha ✨</h1>
+
+            <div class="student-description">
+                <p id="aasthaDesc">
+                    Aastha is a dedicated team member contributing to the web
+                    development and fitness aspects of this project. She
+                    demonstrates strong technical skills, a passion for healthy
+                    living, and a commitment to delivering a well-structured
+                    and impactful solution through teamwork and consistency.
+                    linkedIn: <a href="" target="_blank">Aastha's LinkedIn</a>
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Passion Section -->
+    <div class="info-section">
+
+        <h3>💪 Our Passion</h3>
+
+        <div class="passion-cards">
+
+            <div class="passion-card">
+                <div class="passion-emoji">💻</div>
+                <p>Web Development</p>
+            </div>
+
+            <div class="passion-card">
+                <div class="passion-emoji">🏃</div>
+                <p>Fitness Journey</p>
+            </div>
+
+            <div class="passion-card">
+                <div class="passion-emoji">🚀</div>
+                <p>Learning & Growing</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Skills -->
+    <div class="skills">
+
+        <h3>🛠️ Skills</h3>
+
+        <span class="skill-tag">HTML</span>
+        <span class="skill-tag">CSS</span>
+        <span class="skill-tag">JavaScript</span>
+
+    </div>
+
+    <!-- Goals -->
+    <div class="achievements">
+
+        <h3>🎯 Goals</h3>
+
+        <div class="achievement-item">📱 Build amazing web apps</div>
+        <div class="achievement-item">🏆 Help others get fit</div>
+        <div class="achievement-item">📚 Keep learning & innovating</div>
+
+    </div>
+
     <h3 id="weight">⚖️ Weight Tracking</h3>
     <div class="input-group">
         <input type="number" id="currentWeight" placeholder="Current Weight (kg)" step="0.1">
@@ -79,127 +231,6 @@
     </div>
 
     <div id="workoutRecommendation" class="summary-box"></div>
-
-    <!-- About Us Section -->
-    <h3 id="aboutus">👤 About Us</h3>
-    
-    <!-- Professor Card -->
-    <div class="floating-professor-card" onclick="toggleProfessorCard()">
-        <div class="professor-content">
-            <div class="professor-image">
-                <img 
-                    id="drAbhishekImg"
-                    src="Abhishek (Logo) - 1.png"
-                    alt="Dr. Abhishek"
-                    class="profile-img-professor"
-                >
-            </div>
-            <div class="professor-info">
-                <h2>Dr. Abhishek</h2>
-                <p class="professor-title">📚 Associate Professor</p>
-                <p class="professor-desc">Guide & Mentor</p>
-            </div>
-            <div class="professor-details">
-                <p class="professor-bio">
-                    Dr. Abhishek is a dedicated Associate Professor with expertise
-                    in web development and software engineering. He has been
-                    instrumental in guiding this fitness tracker project,
-                    providing valuable insights and mentorship to ensure
-                    innovative solutions and high-quality work.
-                    linkedIn: <a href="https://www.linkedin.com/in/dr-abhishek-thakur-00123321?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">Dr. Abhishek's LinkedIn</a>
-                </p>
-                <div class="professor-contact">
-                    <p>🎓 Department of Computer Science</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="students">
-        <!-- Anamika -->
-        <div class="student">
-            <div class="student-image-container">
-                <img
-                    id="anamikaImg"
-                    src="anamika image.jpeg"
-                    alt="Anamika"
-                    class="profile-img"
-                >
-            </div>
-            <h1>✨ Anamika ✨</h1>
-            <div class="student-description">
-                <p id="anamikaDesc">
-                    Anamika is an enthusiastic team member who brings creativity
-                    and strong problem-solving skills to enhance both the design
-                    and functionality of this project. She consistently contributes
-                    innovative ideas, pays attention to detail, and ensures that
-                    the user experience remains engaging and effective.
-                    linkedIn: <a href="https://www.linkedin.com/in/anamika-singh-a2889935a?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">Anamika's LinkedIn</a>
-                </p>
-            </div>
-        </div>
-
-        <!-- Divider -->
-        <div class="divider"></div>
-
-        <!-- Aastha -->
-        <div class="student">
-            <div class="student-image-container">
-                <img
-                    id="aasthaImg"
-                    src="aastha image .jpeg"
-                    alt="Aastha"
-                    class="profile-img"
-                >
-            </div>
-            <h1>✨ Aastha ✨</h1>
-            <div class="student-description">
-                <p id="aasthaDesc">
-                    Aastha is a dedicated team member contributing to the web
-                    development and fitness aspects of this project. She
-                    demonstrates strong technical skills, a passion for healthy
-                    living, and a commitment to delivering a well-structured
-                    and impactful solution through teamwork and consistency.
-                    linkedIn: <a href="" target="_blank">Aastha's LinkedIn</a>
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Passion Section -->
-    <div class="info-section">
-        <h3>💪 Our Passion</h3>
-        <div class="passion-cards">
-            <div class="passion-card">
-                <div class="passion-emoji">💻</div>
-                <p>Web Development</p>
-            </div>
-            <div class="passion-card">
-                <div class="passion-emoji">🏃</div>
-                <p>Fitness Journey</p>
-            </div>
-            <div class="passion-card">
-                <div class="passion-emoji">🚀</div>
-                <p>Learning & Growing</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Skills -->
-    <div class="skills">
-        <h3>🛠️ Skills</h3>
-        <span class="skill-tag">HTML</span>
-        <span class="skill-tag">CSS</span>
-        <span class="skill-tag">JavaScript</span>
-    </div>
-
-    <!-- Goals -->
-    <div class="achievements">
-        <h3>🎯 Goals</h3>
-        <div class="achievement-item">📱 Build amazing web apps</div>
-        <div class="achievement-item">🏆 Help others get fit</div>
-        <div class="achievement-item">📚 Keep learning & innovating</div>
-    </div>
 
     </div>
 
